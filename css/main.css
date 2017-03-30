@@ -95,19 +95,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
 body{
   margin: 0;
   font-family: arial;
+  height: 100%;
+}
+
+html{
+  height: 100%;
 }
 
 *{
   margin: 0;
 }
 
-.bkground{
-  background-color: black;
-  color: white;
-}
+/*GLOBAL*/
 
 a{
   text-decoration: none;
@@ -127,9 +130,169 @@ img{
   width: 100%;
 }
 
+/*DISPLAY NONE*/
+
+header figure:nth-child(3),
+header figure:nth-child(2), .galery p,
+.galery article:nth-child(5),
+.galery article:nth-child(6),
+.blog p:nth-child(2),
+.end input:nth-child(4),
+.end label:nth-child(2){
+  display: none;
+}
+
+/*HEADER*/
+
+.dropdown {
+   position: fixed;
+   display: inline-block;
+   background: black;
+   width: 100%;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: black;
+   opacity: 0.8;
+   text-align: center;
+   width: 100%;
+   font-weight: bold;
+   z-index: 1;
+}
+
+.dropdown-content a {
+   color: white;
+   padding: 20px;
+   display: block;
+   text-transform: uppercase;
+}
+
+.dropdown-content a:hover{
+  color: #c91818;
+}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+.dropdown p{
+  font-size: 25px;
+  text-align: center;
+  color: #c91818;
+}
+
+.bkground{
+  background-image: url(../img/back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+}
+
+header{
+  display: flex;
+}
+
+.bkground h1{
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
+  margin-top: 40%;
+  text-transform: uppercase;
+  color: #c91818;
+  font-weight: bold;
+  /*letter-spacing: 3px;*/
+}
+
+/*CONTAINER*/
+
 .container{
   width: 90%;
-  margin: auto;
+  margin: 5% auto;
+}
+
+.container h2{
+  margin: 8% auto;
+  border-left: 2px #c91818 solid;
+  padding: 0 5%;
+}
+
+.container h2:hover{
+  color:  #c91818;
+}
+
+.galery{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galery h3{
+  font-size: 16px;
+  text-align: left;
+  margin: 10% auto;
+}
+
+.exemple{
+    margin: 1%;
+    width: 48%;
+    text-align: center;
+}
+
+/*footer*/
+
+footer{
+  background: black;
+}
+
+footer h4, footer p, .end input[name="emailm"],
+.end input[name="submitnew"]{
+  color: white;
+}
+
+.end{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.end h4{
+  margin: 3% auto;
+  font-weight: normal;
+}
+
+.end input[name="emailm"],
+.end input[name="submitnew"]{
+  border: 0;
+  background: #c91818;
+  padding: 8% 0;
+  width: 100%;
+  margin: 2% auto;
+}
+
+footer p{
+  margin: 3% auto auto auto;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .bkground h1{
+    margin-top: 30%;
+  }
+}
+
+@media (min-width: 680px) {
+  .bkground h1{
+    margin-top: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .bkground h1{
+    margin-top: 20%;
+  }
 }
 
 
