@@ -132,8 +132,7 @@ img{
 
 /*DISPLAY NONE*/
 
-header figure:nth-child(3),
-header figure:nth-child(2), .galery p,
+.logo figure, .galery p,
 .galery article:nth-child(5),
 .galery article:nth-child(6),
 .blog p:nth-child(2){
@@ -311,8 +310,32 @@ footer p{
   .blog p:nth-child(2),
   #new input:nth-child(2),
   #new label:nth-child(1),
-  footer span, .galery p{
+  footer span, .galery p,
+  .logo figure{
     display: block;
+  }
+
+  .logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: right;
+  }
+
+  .logo figure:nth-child(1){
+    width: 3%;
+    margin-top: 50px;
+  }
+
+  .logo figure:nth-child(2){
+    width: 2%;
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .logo img{
+    margin-right: 100%;
   }
 
   #new input:nth-child(3){
