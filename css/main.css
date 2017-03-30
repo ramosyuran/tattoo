@@ -135,7 +135,7 @@ img{
 .logo figure, .galery p,
 .galery article:nth-child(5),
 .galery article:nth-child(6),
-.blog p:nth-child(2){
+.blog p:nth-child(2), #map{
   display: none;
 }
 
@@ -307,6 +307,36 @@ header{
 
 /*page user end*/
 
+/*contact page*/
+
+.contact iframe{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.contact input[name="submitcont"]{
+  width: 80%;
+  background: #c91818;
+  color: white;
+}
+
+.contact input{
+  width: 80%;
+}
+
+.contact textarea{
+  padding: 8px;
+  width: 80%;
+  height: 50px;
+}
+
+#telmail{
+  background: #eee;
+  margin: 5% auto;
+}
+
+/*contact page end*/
+
 /*footer*/
 
 footer{
@@ -441,6 +471,22 @@ footer p{
   }
 
   /*end user page*/
+
+  /*contact page*/
+
+  .contact input, .contact textarea{
+    width: 50%;
+  }
+
+  .contact textarea{
+    height: 100px;
+  }
+
+  .contact input[name="submitcont"]{
+    width: 50%;
+  }
+
+  /*end contact pag */
 
   #sub input[name="submitnew"]{
     width: 100%;
