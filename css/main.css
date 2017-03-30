@@ -218,10 +218,6 @@ header{
   padding: 0 5%;
 }
 
-.container h2:hover{
-  color:  #650d1b;
-}
-
 .galery{
   display: flex;
   justify-content: space-between;
@@ -239,6 +235,77 @@ header{
     width: 48%;
     text-align: center;
 }
+
+/*page user*/
+
+.user h2{
+  font-size: 22px;
+}
+
+.user form{
+  flex-direction: column;
+  width: 100%;
+}
+
+.user input[name="name"],
+.user input[name="pass"]{
+  width: 80%;
+}
+
+.birth select{
+  width: 25%;
+}
+
+.birth input{
+  width: 25%;
+}
+
+.user input[name="email"]{
+  width: 80%;
+}
+
+.birth, .line{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 5% auto;
+}
+
+.user input[name="submituser"]{
+  display: flex;
+  margin: 5% 0;
+  background: #650d1b;
+  color: white;
+  padding: 7px;
+  width: 60%;
+}
+
+.line input, .contact input{
+  padding: 8px;
+}
+
+.birth input{
+  padding: 5px;
+}
+
+.birth select{
+  border-radius: 0;
+  border: 1px lightgrey solid;
+  background: white;
+  padding: 4px;
+}
+
+.user input, .contact input, .contact textarea{
+  border-radius: 0;
+  border: 1px lightgrey solid;
+  margin: 3px 0;
+}
+
+.user label{
+  margin: 5px 0;
+}
+
+/*page user end*/
 
 /*footer*/
 
@@ -367,6 +434,14 @@ footer p{
     border-bottom: 2px #650d1b solid;
   }
 
+  /*user page*/
+
+  .user input[name="submituser"]{
+    width: 35%;
+  }
+
+  /*end user page*/
+
   #sub input[name="submitnew"]{
     width: 100%;
   }
@@ -425,6 +500,14 @@ footer p{
    -webkit-transform:scale(1.25); /* Safari and Chrome */
    -o-transform:scale(1.25);
   }
+
+  /*user page*/
+
+  .user input[name="submituser"]{
+    width: 30%;
+  }
+
+  /*end user pag*/
 
 }
 
