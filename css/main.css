@@ -136,9 +136,7 @@ header figure:nth-child(3),
 header figure:nth-child(2), .galery p,
 .galery article:nth-child(5),
 .galery article:nth-child(6),
-.blog p:nth-child(2),
-.end input:nth-child(4),
-.end label:nth-child(2){
+.blog p:nth-child(2){
   display: none;
 }
 
@@ -170,7 +168,7 @@ header figure:nth-child(2), .galery p,
 }
 
 .dropdown-content a:hover{
-  color: #c91818;
+  color: #650d1b;
 }
 
 .dropdown:hover .dropdown-content {
@@ -180,7 +178,7 @@ header figure:nth-child(2), .galery p,
 .dropdown p{
   font-size: 25px;
   text-align: center;
-  color: #c91818;
+  color: white;
 }
 
 .bkground{
@@ -202,7 +200,7 @@ header{
   width: 100%;
   margin-top: 40%;
   text-transform: uppercase;
-  color: #c91818;
+  color: #650d1b;
   font-weight: bold;
   /*letter-spacing: 3px;*/
 }
@@ -216,16 +214,18 @@ header{
 
 .container h2{
   margin: 8% auto;
-  border-left: 2px #c91818 solid;
+  border-left: 2px #650d1b solid;
+  border-right: 2px #650d1b solid;
   padding: 0 5%;
 }
 
 .container h2:hover{
-  color:  #c91818;
+  color:  #650d1b;
 }
 
 .galery{
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -247,34 +247,45 @@ footer{
   background: black;
 }
 
-footer h4, footer p, .end input[name="emailm"],
-.end input[name="submitnew"]{
-  color: white;
+footer span{
+  display: none;
 }
 
 .end{
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-}
-
-.end h4{
-  margin: 3% auto;
-  font-weight: normal;
-}
-
-.end input[name="emailm"],
-.end input[name="submitnew"]{
-  border: 0;
-  background: #c91818;
-  padding: 8% 0;
   width: 100%;
-  margin: 2% auto;
+  padding: 10px 0;
+}
+
+footer p, .end label{
+  color: white;
+}
+
+#new{
+  display: flex;
+}
+
+#new input{
+  background: #650d1b;
+  color: white;
+  border: 0;
+  padding: 5px;
+}
+
+#sub input[name="submitnew"], #new input{
+  width: 100%;
+}
+
+#sub input[name="submitnew"]{
+  margin: 1% 0 5% 0;
+  background: #650d1b;
+  color: white;
+  border: 0;
+  padding: 3px;
 }
 
 footer p{
-  margin: 3% auto auto auto;
   text-align: center;
+  font-size: 14px;
 }
 
 @media (min-width: 500px) {
@@ -299,8 +310,15 @@ footer p{
 
   .galery article:nth-child(5),
   .galery article:nth-child(6),
-  .blog p:nth-child(2){
+  .blog p:nth-child(2),
+  #new input:nth-child(2),
+  #new label:nth-child(1),
+  footer span{
     display: block;
+  }
+
+  #new input:nth-child(3){
+    display: none;
   }
 
   .exemple{
@@ -315,10 +333,29 @@ footer p{
   .blog p{
     text-align: justify;
     width: 45%;
-    border-top: 2px #c91818 solid;
-    border-bottom: 2px #c91818 solid;
+    border-top: 2px #650d1b solid;
+    border-bottom: 2px #650d1b solid;
   }
 
+  #sub input[name="submitnew"]{
+    width: 100%;
+  }
+
+  .end{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #new{
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  
 
 }
 
