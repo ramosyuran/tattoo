@@ -144,7 +144,7 @@ img{
 .dropdown {
    position: fixed;
    display: inline-block;
-   background: black;
+   background: #650d1b;
    width: 100%;
 }
 
@@ -152,14 +152,14 @@ img{
    display: none;
    position: absolute;
    background-color: black;
-   opacity: 0.8;
+   opacity: 0.9;
    text-align: center;
    width: 100%;
    font-weight: bold;
    z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content a{
    color: white;
    padding: 20px;
    display: block;
