@@ -181,12 +181,13 @@ img{
 }
 
 .bkground{
-  background-image: url(../img/back.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../img/back.jpg") fixed;
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  background-size: 100% 100%;
   color: white;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
 }
 
 header{
@@ -248,7 +249,8 @@ header{
 }
 
 .user input[name="name"],
-.user input[name="pass"]{
+.user input[name="pass"],
+.user input[name="email"]{
   width: 80%;
 }
 
@@ -258,10 +260,6 @@ header{
 
 .birth input{
   width: 25%;
-}
-
-.user input[name="email"]{
-  width: 80%;
 }
 
 .birth, .line{
@@ -315,8 +313,8 @@ header{
 }
 
 .contact input[name="submitcont"]{
-  width: 80%;
-  background: #c91818;
+  width: 50%;
+  background: #650d1b;
   color: white;
 }
 
@@ -470,12 +468,16 @@ footer p{
     width: 35%;
   }
 
+  .user{
+    margin: auto 20%;
+  }
+
   /*end user page*/
 
   /*contact page*/
 
   .contact input, .contact textarea{
-    width: 50%;
+    width: 80%;
   }
 
   .contact textarea{
@@ -483,7 +485,24 @@ footer p{
   }
 
   .contact input[name="submitcont"]{
-    width: 50%;
+    width: 40%;
+  }
+
+  #telmail{
+    width: 30%;
+    height: 300px;
+    padding: 10px;
+  }
+
+  .contact form{
+    width: 60%;
+  }
+
+  .contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   /*end contact pag */
@@ -550,7 +569,13 @@ footer p{
   /*user page*/
 
   .user input[name="submituser"]{
-    width: 30%;
+    width: 20%;
+  }
+
+  .user input[name="name"],
+  .user input[name="pass"],
+  .user input[name="email"]{
+    width: 60%;
   }
 
   /*end user pag*/
