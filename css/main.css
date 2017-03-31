@@ -132,7 +132,7 @@ img{
 
 /*DISPLAY NONE*/
 
-.logo figure, .galery p,
+.social, .galery p,
 .galery article:nth-child(5),
 .galery article:nth-child(6),
 .blog p:nth-child(2), #map{
@@ -182,8 +182,6 @@ img{
 
 .bkground{
   background: url("../img/back.jpg") fixed;
-  /*background-position: center;*/
-  /*background-repeat: no-repeat;*/
   background-size: 100% 100%;
   color: white;
   width: 100%;
@@ -328,9 +326,30 @@ header{
   height: 50px;
 }
 
+.contact img{
+  width: 8%;
+}
+
+h3{
+  margin: 3% auto;
+}
+
+h3 img{
+  width: 6%;
+}
+
+ #map img{
+   width: 3%;
+ }
+
 #telmail{
-  background: #eee;
+  border: 1px lightgrey solid;
   margin: 5% auto;
+  padding: 5px 15px ;
+}
+
+#telmail h4{
+  font-size: 20px;
 }
 
 /*contact page end*/
@@ -410,27 +429,20 @@ footer p{
     display: block;
   }
 
-  .logo{
-    width: 100%;
+  .social{
+    width: 15%;
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
-    text-align: right;
+    margin-top: 40px;
   }
 
-  .logo figure:nth-child(1){
-    width: 3%;
-    margin-top: 50px;
+  .social img{
+    width: 50%;
   }
 
-  .logo figure:nth-child(2){
-    width: 2%;
+  header{
     display: flex;
-    margin-top: 50px;
-  }
-
-  .logo img{
-    margin-right: 100%;
+    justify-content: flex-end;
   }
 
   #new input:nth-child(3){
@@ -498,6 +510,10 @@ footer p{
     width: 60%;
   }
 
+  h3 img{
+    width: 3%;
+  }
+
   .contact{
     width: 100%;
     display: flex;
@@ -505,6 +521,9 @@ footer p{
     align-items: baseline;
   }
 
+  .line{
+    margin: 0 0 5% 0;
+  }
   /*end contact pag */
 
   #sub input[name="submitnew"]{
@@ -566,6 +585,14 @@ footer p{
    -o-transform:scale(1.25);
   }
 
+  #map{
+    display:block;
+  }
+
+  #map p{
+    margin: auto auto 2% auto;
+  }
+
   /*user page*/
 
   .user input[name="submituser"]{
@@ -579,6 +606,8 @@ footer p{
   }
 
   /*end user pag*/
+
+
 
 }
 
