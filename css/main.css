@@ -210,6 +210,8 @@ nav p{
 }
 
 .bkground h1{
+  font-family: times;
+  text-shadow: 2px 2px 4px #eee;
   text-align: center;
   font-size: 50px;
   width: 100%;
