@@ -214,16 +214,37 @@ header{
 
 /*CONTAINER*/
 
-.container{
+.container, .containerg{
   width: 90%;
   margin: 5% auto;
 }
 
-.container h2{
-  margin: 8% auto;
+.container h2, .containerg h1{
+  margin: 5% auto;
   border-left: 2px #650d1b solid;
   border-right: 2px #650d1b solid;
   padding: 0 5%;
+}
+
+.containerg h1{
+  font-size: 30px;
+}
+
+.galerypage article{
+  margin: 10% auto;
+  border-bottom: 1px #650d1b solid;
+}
+
+.galerypage h2{
+  margin: 3% auto;
+}
+
+.galerypage p{
+  text-align: justify;
+}
+
+.img{
+  display: none;
 }
 
 .galery{
@@ -528,6 +549,28 @@ footer p{
   }
   /*end contact pag */
 
+  /*galery page*/
+
+  .galerypage article{
+    display: flex;
+    border-bottom: none;
+  }
+
+  .phrase{
+    margin-left: 5%;
+  }
+
+  .img{
+    display: block;
+  }
+
+  .img figure:nth-child(2){
+    margin-left: 5%;
+  }
+
+
+  /*end galery page*/
+
   input[name="submitnew"]{
     width: 100%;
   }
@@ -635,6 +678,22 @@ footer p{
   }
 
   /*end user pag*/
+
+  /*galery page*/
+
+  .phrase p{
+    line-height: 30px;
+  }
+
+  .phrase h2{
+    margin: 0 0 3% 0;
+  }
+
+  .galerypage article{
+    margin: 5% 0;
+  }
+
+  /*end galery page*/
 
 
 
