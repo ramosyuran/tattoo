@@ -159,7 +159,7 @@ img{
    opacity: 0.9;
    text-align: center;
    width: 100%;
-   letter-spacing: 2px; 
+   letter-spacing: 2px;
    font-weight: bold;
    z-index: 1;
 }
@@ -203,6 +203,10 @@ img{
 
 header{
   display: flex;
+}
+
+nav p{
+  letter-spacing: 2px;
 }
 
 .bkground h1{
@@ -512,8 +516,8 @@ footer p{
   .blog p{
     text-align: justify;
     width: 45%;
-    border-top: 2px #650d1b solid;
-    border-bottom: 2px #650d1b solid;
+    border-top: 1px #650d1b solid;
+    border-bottom: 1px #650d1b solid;
   }
 
   /*user page*/
@@ -620,12 +624,11 @@ footer p{
     width: 30%;
   }
 
-  #old button{
+  #button{
     background: #650d1b;
-    width: 50%;
+    width: 30%;
     color: white;
-    border: 0;
-    padding: 5px 0;
+    padding: 8px;
   }
 
 }
@@ -743,14 +746,7 @@ footer p{
 
   /*end blog page*/
 
-
-
 }
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
