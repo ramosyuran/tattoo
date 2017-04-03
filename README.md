@@ -1,6 +1,6 @@
 # TATTOO
 
-**Tatto** is a small entreprise the tatto in Roubaix. We do tattoo all the types of tattoo, for all the people who has 16+.
+**Tatto** is a small tatto entreprise in Roubaix. We do tattoo all the types of tattoo, for all the people who has 16+.
 
 **Tattoo** a small friendship business with two people, specializes in tattoo and design, able to make sure that we can do exactly what you want.
 
