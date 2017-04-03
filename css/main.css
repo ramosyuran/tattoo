@@ -117,6 +117,10 @@ a{
   color: inherit;
 }
 
+a:hover{
+  color: #650d1b;
+}
+
 figure{
   margin: 0;
   width: 100%;
@@ -141,20 +145,21 @@ img{
 
 /*HEADER*/
 
-.dropdown {
+.dropdown{
    position: fixed;
    display: inline-block;
    background: #650d1b;
    width: 100%;
 }
 
-.dropdown-content {
+.dropdown-content{
    display: none;
    position: absolute;
    background-color: black;
    opacity: 0.9;
    text-align: center;
    width: 100%;
+   letter-spacing: 2px; 
    font-weight: bold;
    z-index: 1;
 }
@@ -214,19 +219,19 @@ header{
 
 /*CONTAINER*/
 
-.container, .containerg{
+.container, .containerg, .containerb{
   width: 90%;
   margin: 5% auto;
 }
 
-.container h2, .containerg h1{
+.container h2, .containerg h1, .containerb h1{
   margin: 5% auto;
   border-left: 2px #650d1b solid;
   border-right: 2px #650d1b solid;
   padding: 0 5%;
 }
 
-.containerg h1{
+.containerg h1, .containerb h1{
   font-size: 30px;
 }
 
@@ -241,10 +246,6 @@ header{
 
 .galerypage p{
   text-align: justify;
-}
-
-.img{
-  display: none;
 }
 
 .galery{
@@ -383,6 +384,24 @@ h3 img{
 }
 
 /*contact page end*/
+
+/*blog page*/
+
+.containerb article{
+  margin: 5% 0;
+  border: 1px lightgrey solid;
+  padding: 10px;
+}
+
+.containerb p{
+  text-align: justify;
+}
+
+.containerb h2{
+  margin-bottom: 5%;
+}
+
+/*blog page end*/
 
 /*footer*/
 
@@ -553,6 +572,7 @@ footer p{
 
   .galerypage article{
     display: flex;
+    align-items: center;
     border-bottom: none;
   }
 
@@ -560,16 +580,15 @@ footer p{
     margin-left: 5%;
   }
 
-  .img{
-    display: block;
-  }
-
-  .img figure:nth-child(2){
-    margin-left: 5%;
-  }
-
-
   /*end galery page*/
+
+  /*page blog */
+
+  .containerb h2{
+    margin-bottom: 2%;
+  }
+
+  /*end page blog*/
 
   input[name="submitnew"]{
     width: 100%;
@@ -621,6 +640,10 @@ footer p{
     font-size: 80px;
   }
 
+  .exemple img{
+    width: 220px;
+  }
+
   .exemple{
     width: 48%;
     display: flex;
@@ -633,8 +656,14 @@ footer p{
   }
 
   .galery article:nth-child(2),
-  .galery article:nth-child(4){
+  .galery article:nth-child(4),
+  .galery article:nth-child(6){
     flex-direction: row-reverse;
+  }
+
+  .galery article:nth-child(5),
+  .galery article:nth-child(6){
+    display: flex;
   }
 
   .flex{
@@ -694,6 +723,25 @@ footer p{
   }
 
   /*end galery page*/
+
+  /*page blog*/
+
+  .b article{
+    width: 45%;
+  }
+
+  .b article:nth-child(1),
+  .b article:nth-child(2){
+    margin-bottom: 10px;
+  }
+
+  .b{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /*end blog page*/
 
 
 
